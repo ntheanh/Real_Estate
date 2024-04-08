@@ -1,0 +1,46 @@
+nav {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  a {
+    transition: all 0.4s ease;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 2rem;
+      gap: 1rem;
+      img {
+        width: 28px;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fcf5f2;
+    height: 100%;
+    a {
+      padding: 1.2rem 2.4rem;
+      border-radius: 0.5rem;
+      margin: 2rem;
+    }
+    .register {
+      background-color: #fece51;
+    }
+  }
+}
