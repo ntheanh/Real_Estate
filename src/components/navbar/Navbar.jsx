@@ -1,41 +1,37 @@
-import { useState } from "react"
-import "./navbar.scss"
+import {} from "./navbar.scss"
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
-  console.log(open, setOpen)
   return (
     <nav>
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />
-          <span>Estate</span>
+          <span>Real Estate</span>
         </a>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Agents</a>
+
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+          <li>
+            <a href="/">Agents</a>
+          </li>
+        </ul>
       </div>
       <div className="right">
-        <a href="/">Sign in</a>
-        <a href="/" className="register">
-          Sign up
-        </a>
-        <div className="menuIcon">
-          <img
-            src="/menu.png"
-            alt=""
-            onClick={() => setOpen((prev) => !prev)}
-          />
-        </div>
-        <div className={open ? "menu active" : "menu"}>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-          <a href="">Agents</a>
-          <a href="">About</a>
-          <a href="">Sign in</a>
-          <a href="">Sign up</a>
-        </div>
+        <ul>
+          <li>
+            <a href="/">Sign in</a>
+          </li>
+          <li>
+            <a href="/">Sign up</a>
+          </li>
+        </ul>
       </div>
     </nav>
   )
